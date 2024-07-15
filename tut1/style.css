@@ -1,0 +1,140 @@
+:root{
+    --primary-color  : #0a2d63;
+    --secondary-color: #bebebe;
+    --content-text-color : #7f7f7f;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.header-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--primary-color);
+    font-size: 2.36859rem;
+    margin-top: 30px;
+}
+
+.border-container{
+    height: 0.8px;
+    width: 90px;
+    border-radius: 10px;
+    background-color: lightgray;
+    margin-top: 20px;
+}
+
+.cards-main-container{
+    margin-top: 40px;
+}
+
+.cards-sub-container{
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+}
+
+.card-container{
+    margin: 0px 10px;
+}
+
+.card-img{
+    width: 350px;
+    border-radius: 12px;
+}
+
+.card-heading-container{
+    text-align: center;
+}
+
+.card-title{
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-top: 30px;
+}
+
+.card-date{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--secondary-color);
+    text-align: center;
+    margin-top: 15px;
+}
+
+.card-content-container{
+    width: 350px;
+    padding: 0px 5px;
+}
+
+.card-content{
+    font-size: 0.99rem;
+    color: var(--content-text-color);
+    margin-top: 15px;
+    text-align: center;
+    font-family: "PT Sans", sans-serif !important;
+    line-height: 1.45;
+}
+
+.card-link-container{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.card-link{
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.card-link:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1110px) {
+    .cards-sub-container{
+        flex-wrap: wrap;
+    }
+    .card-container{
+        padding-bottom: 50px;
+    }
+    .card-img{
+        width: 450px;
+    }
+    .card-content-container{
+        width: 450px;
+        padding:0px 20px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .card-img{
+        width: 350px;
+    }
+    .card-content-container{
+        width: 350px;
+        padding:0px 20px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .img-container{
+        width: 100%;
+    }
+    .card-img{
+        width: 100%;
+    }
+    .card-content-container{
+        width: 100%;
+        padding:0px 20px;
+    }
+}
